@@ -1,0 +1,98 @@
+sudo update-alternatives --config java
+
+sudo update-alternatives --list java
+
+sudo adduser alice (adds a new user)
+
+whoami (tell which user is current log in)
+
+getent group sudo(to check who is in sudo group)
+
+groups (tell in which groups the current user is in)
+
+groups username (tell this user is in which groups)
+
+sudo -l (This tells you exactly what your current user is allowed to run through sudo)
+
+su - username (switch to username)
+
+sudo usermod -aG sudo username (add username to sudo group)
+
+sudo apt update (updates the apt local package list form the ubuntu repository)
+
+apt list (list packages that are there in the apt local list)
+
+apt show <package_name> Shows details about the package_name
+
+apt search <package_name> (Searches for packages matching package_name)
+
+apt list --installed, dpkg -l (show the installed packages)
+
+apt list --installed <package_name> (check that a certain package is installed)
+
+git clone https_link (clone a repository)
+
+git pull (get the latest changes all over the repository)
+
+git pull origin main (Get the main branch from the GitHub repository called origin and bring its changes to my local repository)
+
+git branch -M main (change the name of the branch to main)
+
+git remote add origin https_link (connect this git repository to the github repository)
+
+(setting valuse)
+git config --global user.name "Jatin Moral"
+git config --global user.email "yourgmail@gmail.com"
+
+(checking the valuse)
+git config --global user.name
+git config --global user.email
+git config --global --list
+
+(branches)
+git branch
+
+(for list both local and remote branches)
+git branch -a
+(it will give like
+* main
+  login
+  payment
+  remotes/origin/main
+  remotes/origin/login
+  main, login, payment → local branches
+origin/main, origin/login → branches that exist on the remote repository (usually GitHub)
+)
+
+(create a branch)
+git branch branch-name
+
+(switch branch)
+git switch branch-name
+
+(create and switch in one command)
+git switch -c branch-name
+
+(delete local branch)
+git branch -d branch-name
+
+npm install (reads package.json and install dependencies and scripts)
+
+npm ci (if both are give package.json and package-lock.json to install dependencies)
+
+npm run (This shows the available scripts, give what commands are needed to run this application)
+
+package.json → describes the project's dependencies and scripts.
+package-lock.json → records the exact versions of dependencies that were installed/used.
+
+sudo deluser username -> delete a user on ubuntu (removes the user account but keeps their home directory)
+
+sudo deluser --remove-home username -> to also delete there personal files 
+
+sudo pkill -u username (kill every process belonging to this user username)
+
+ps -u username (See all processes belonging to that user)
+
+ps -fp xyz(xyz is a number, used to know about the process xyz i.e about process xyz)
+
+
