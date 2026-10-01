@@ -40,6 +40,10 @@ git branch -M main (change the name of the branch to main)
 
 git remote add origin https_link (connect this git repository to the github repository)
 
+git remote set-url origin <https_link or ssh> (changes a preset value)
+
+git push -u origin <branch>
+
 (setting valuse)
 git config --global user.name "Jatin Moral"
 git config --global user.email "yourgmail@gmail.com"
@@ -94,5 +98,17 @@ sudo pkill -u username (kill every process belonging to this user username)
 ps -u username (See all processes belonging to that user)
 
 ps -fp xyz(xyz is a number, used to know about the process xyz i.e about process xyz)
+
+ssh-keygen -t ed25519 -C "your-github-email@example.com" (to create a SSH key)
+
+{//
+Start SSH agent
+eval "$(ssh-agent -s)"
+
+then
+
+ssh-add ~/.ssh/id_ed25519
+//}
+
 
 
