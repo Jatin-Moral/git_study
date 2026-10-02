@@ -1,0 +1,5 @@
+when making a heap function 
+
+heap up-> push element in the last and move it to above by comaparing it to the parent(i/2);
+
+heap dowm-> take element from the last append it to the first place than make compare it with the child for max heap comapre with the maximum child for min heap comapre it with the mininum child;
